@@ -10,9 +10,10 @@ To use React, we need to install **npm**, or using [unpkg](https://unpkg.com/).
 
 We can create element using React's createElement API:
 ```js
-const element = React.createElement('div' {
-  children: 'Hello World!',
-  className: 'container'
+const element = React.createElement(            // create an element with `React.createElement`
+  'div' {                                       // element
+  children: 'Hello World!',                     // props.children
+  className: 'container'                        // props.children
 });
 ```
 
@@ -25,9 +26,9 @@ Full code: https://codesandbox.io/s/upbeat-greider-eq2wy?fontsize=13&hidenavigat
 <script type="text/javascript">
   const rootElement = document.querySelector('#root');
   const element = React.createElement(
-    'div', {                                    // element 
-    children: ['Hello World!', 'I am React'],   // props.children
-    className: 'container'                      // props.className
+    'div', { 
+    children: ['Hello World!', 'I am React'],
+    className: 'container'
   });
   ReactDOM.render(element, rootElement);
 </script>
