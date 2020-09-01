@@ -1,4 +1,4 @@
-# Create a User Interface with React's createElement API
+# Create a User Interface with Vanilla Javascript and DOM
 
 ```html
 <div id="root"></div> <!-- The App will be mounted here -->
