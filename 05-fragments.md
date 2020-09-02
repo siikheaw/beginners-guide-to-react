@@ -47,4 +47,7 @@ JSX has a special syntax for `React.Fragment`:
 ---
 
 ## Recap
-- Normally, we can't create sibling side by side in React. But `React.Fragment` 
+- Normally, we can't create sibling side by side in React. But with `React.Fragment` make it possible.
+- Two way to use `React.Fragment`
+  - `<React.Fragment></React.Fragment>`
+  - `<></>`
