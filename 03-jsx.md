@@ -1,4 +1,4 @@
-# JSX
+# Create a User Interface with React’s JSX syntax
 
 JSX is a JavaScript extension which is HTML like syntax. To use JSX in a browser, we must use Babel to compile JSX to normal JavaScript.
 
