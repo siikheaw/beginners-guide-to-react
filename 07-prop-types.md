@@ -13,15 +13,14 @@ function SayHello({firstName, lastName}) {
 ReactDOM.render(element, querySelector('#root');
 ```
 
-`propsType` is allowed to add runtime validation of the props passed to components.
-`propsType` validate the types of props that being passed when render.
+`propTypes` validate the types of props that being passed when render.
 
 ```jsx
 SayHello.propTypes = {
   firstName(props, propName, componentName) {
     if (typeof props[propName] !== 'string') {
       return new Error(
-        `Your error message.`
+        `The component ${componentName} nees the prop ${propName}` to be a string, but passed a ${typeof props[propName]})
       );
     }
   }
