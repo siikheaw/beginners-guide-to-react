@@ -24,7 +24,22 @@ const element = (
 
 In JSX:
 ```jsx
+const Message = (props) => <div className="message">{props.msg}</div>
+const element = (
+  <div className="container">
+    <Message msg="Hello World!" />
+    <Message msg="I am React!" />
+  </div>
+);
 
+// Or using props.children
+const Message = (props) => <div className="message">{props.children}</div>
+const element = (
+  <div className="container">
+    <Message>Hello World!</Message>
+    <Message>I am React!</Message>
+  </div>
+);
 ```
 
 ## Note
@@ -39,5 +54,14 @@ React.createElement("message", null, "Hello World!)
 
 To create a component in React, use a capital letter:
 ```jsx
+<Message>Hello World!</Message>
 
+// Will compiled to:
+React.createElement(Message, null, "Hello World!">
 ```
+
+---
+
+## Recap
+- To reuse code, we create own custom function components which accept `props` object and return more React components.
+- Components must start with a capital letter. So that Babel can compile to pass the function itself to React.createElement rather than the string message to React.createElement.
