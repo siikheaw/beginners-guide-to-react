@@ -6,7 +6,7 @@ const element = <SayHello firstName={false} />    // give the boolean value to f
 
 function SayHello({firstName, lastName}) {
   return (
-    <div>Hello {firstName {lastName}!</div>
+    <div>Hello {firstName} {lastName}!</div>
   );
 }
 
