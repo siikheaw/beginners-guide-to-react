@@ -1,6 +1,11 @@
 # Understand and Use Interpolation in JSX
 
-Consider this example:
+**Template literals** are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them.
+
+Inside the curly braces, it's *JavaScript land*, but its limited to only expressions.
+
+Interpolation is not unique to React or JavaScript, we also see it in HTML when we use `script` tags or `stype` tags.
+
 ```js
 // The text "Hello World" has 11 characters
 // The text "" has No characters
