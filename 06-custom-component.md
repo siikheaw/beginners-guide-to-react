@@ -1,6 +1,9 @@
 # Create a Simple Reusable React Component
 
-Consider this example:
+One of the biggest paradigm shifts that React offered to the UI ecosystem was the component model.
+
+Components let you split the UI into independant, reusable pieces, and think about each piece in isolation.
+
 ```jsx
 const message = <div className="message">Hello World!</div>
 const element = (
