@@ -1,6 +1,8 @@
 # Rerender a React Application
 
-When render the application, React will only update the parts that actually changed.
+Updating the DOM is typically the slowest part of the whole process. React only updates what's necessary.
+
+React DOM compares the element and its children to the previous one, and only applies the DOM updates necessary to bring the DOM to the desired state.
 
 The normal JavaScript app:
 ```js
@@ -41,4 +43,4 @@ tick();
 setInterval(tick, 1000);
 ```
 
-With React app, only parts that need to be update will be re-rendered.
+Even though we create an element describing the whole UI tree on every tick, only the text node whose contents have changed gets updated by React DOM.
