@@ -1,5 +1,10 @@
 # Create a User Interface with Vanilla Javascript and DOM
 
+- To create a user interface with JavaScript you will need a place to append your JavaScript DOM elements. This will be the `root` of our application.
+- Get access to that element using the document's API.
+- We create our element and add properties to it.
+- Finally, appended it to the DOM element.
+
 ```html
 <div id="root"></div> <!-- The App will be mounted here -->
 <script type="text/javascript">
